@@ -1,0 +1,20 @@
+<modification>
+	<id>Utilizar la coma como separador decimal</id>
+	<version>1.5.x</version>
+	<vqmver>2.2.1</vqmver>
+	<author>CodigoJavaOracle</author>
+	<file name="admin/model/catalog/product.php">
+		<operation>
+			<search position="after"><![CDATA[function editProduct($product_id, $data) {]]></search>
+			<add><![CDATA[
+				$data['price'] = str_replace(",", ".", $data['price']);
+			]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[function addProduct($data) {]]></search>
+			<add><![CDATA[
+				$data['price'] = str_replace(",", ".", $data['price']);
+			]]></add>
+		</operation>
+	</file>
+</modification>
