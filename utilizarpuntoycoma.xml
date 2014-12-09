@@ -2,7 +2,7 @@
 	<id>Utilizar la coma como separador decimal</id>
 	<version>1.5.x</version>
 	<vqmver>2.2.1</vqmver>
-	<author>CodigoJavaOracle</author>
+	<author>CodigoJavaOracle.com</author>
 	<file name="admin/model/catalog/product.php">
 		<operation>
 			<search position="after"><![CDATA[function editProduct($product_id, $data) {]]></search>
